@@ -9,14 +9,13 @@
 import Foundation
 
 class EmoMsg {
-    let value: String
+    let value: [String]
 
-    init(value: String) {
+    init(value: [String]) {
         self.value = value
     }
 
     func generate() -> String {
-        // search special character
-        return value
+        return String(describing: value)
     }
 }

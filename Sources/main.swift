@@ -6,13 +6,18 @@
 //
 //
 
-private func main(args: [String]) {
-    let args = args.dropFirst()
-    guard let input = args.first else {
+private func main(input: [String]) {
+    var args = input
+    args.removeFirst()
+    if args.count > 2 {
+        print("Too much args 👻")
+        return
+    } else if args.count < 2 {
+        print("Lack of args 😈")
         return
     }
-    let generator = EmoMsg(value: input)
+    let generator = EmoMsg(value: args)
     print(generator.generate())
 }
 
-main(args: CommandLine.arguments)
+main(input: CommandLine.arguments)

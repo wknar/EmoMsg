@@ -14,7 +14,7 @@ class EmoMsgTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        target = EmoMsg(value: "nice value")
+        target = EmoMsg(value: ["command", "nice", "value"])
     }
     
     override func tearDown() {
