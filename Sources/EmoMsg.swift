@@ -17,6 +17,6 @@ class EmoMsg {
 
     func generate() -> String {
         // search special character
-        return "okome return"
+        return value
     }
 }

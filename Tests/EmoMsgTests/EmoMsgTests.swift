@@ -14,7 +14,7 @@ class EmoMsgTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        target = EmoMsg(value: "value")
+        target = EmoMsg(value: "nice value")
     }
     
     override func tearDown() {
@@ -22,7 +22,7 @@ class EmoMsgTests: XCTestCase {
     }
     
     func testGenerate() {
-        XCTAssertEqual(target.generate(), "okome return")
+        XCTAssertEqual(target.generate(), "nice value")
     }
 
 }
