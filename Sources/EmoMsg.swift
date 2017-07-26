@@ -16,6 +16,11 @@ class EmoMsg {
     }
 
     func generate() -> String {
-        return String(describing: value)
+        let attrString = loopString(str: value[1], num: 10)
+        return attrString + value[0] + attrString
+    }
+
+    func loopString(str: String, num: Int) -> String {
+        return (1...num).reduce(""){ $0.0 + str }
     }
 }
