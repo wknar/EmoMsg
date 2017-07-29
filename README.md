@@ -1,4 +1,4 @@
-# EmoMsg
+# 😍😘😗😙😚EmoMsg😋😜😝😛🤗
 [![](https://img.shields.io/badge/Swift-3.1-orange.svg)]()  
   
 This is the command line tool made by swift.  
